@@ -59,7 +59,7 @@ def predict():
         clf = joblib.load("boston_housing_prediction.joblib")
     except:
         LOG.info("JSON payload: %s json_payload")
-        return '{ "prediction": [ 20.35373177134412 ] }'
+        return "{'prediction': [ 20.35373177134412 ]}"
 
     json_payload = request.json
     LOG.info("JSON payload: %s json_payload")
